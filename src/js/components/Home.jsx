@@ -2,12 +2,22 @@ import React from "react";
 import Menu from "./Menu";
 import Jumbotron from "./Jumbotron";
 import Autobiography from "./Autobiography";
+import Card from "./Card";
 
 const Home = () => {
 	return (
 		<>		
 			<h1>Header</h1>
 			<Menu />
+			<Card color='green' profesion='lavandera' pareja="el hijo del alcade" nombre="teresa isabel de la conepcion palacio y ponce"/>
+			<Card color='red' profesion='ladrona' pareja="rio" nombre="tokyo"/>
+			<Card color='orange' profesion='luchador' pareja="milk" nombre="goku"/>
+			<Card  profesion='fotografo' pareja="mary jane" nombre="peter park"/>
+
+			<Card profesion='empresario gangster' pareja="grace" nombre="tomas shelby">
+				Todas las posibles descenlacez
+				<button>Por que podemos </button>
+			</Card>
 			<Jumbotron />
 			<div className="text-center">            
 				<h1 className="text-center mt-5">Hola Bienvenidos a React ⚛️</h1>
